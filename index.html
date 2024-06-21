@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="top">
+        <div class="display"></div>
+    </div>
+    <div class="left">
+        <div class="left-content">
+        <div class="info">
+            <p class="info_name">Change name, marker, and choose the first turn!</p>
+        </div>
+        <div class="player1">
+            <input type="text" class="name player1" value="Player 1" id="namePlayer1">
+            <input type="text" class="marker player1" value="X" id="markerPlayer1">
+            <input type="radio" name="choice" id="choicePlayer1">
+        </div>
+        <div class="player2">
+            <input type="text" class="name player2" value="Player 2" id="namePlayer2">
+            <input type="text" class="marker player2" value="O" id="markerPlayer2">
+            <input type="radio" name="choice" id="choicePlayer2">
+        </div>
+        </div>
+    </div>
+    <div class="board">
+        <button class="game_b" id="aa"></button>
+        <button class="game_b" id="ab"></button>
+        <button class="game_b" id="ac"></button>
+        <button class="game_b" id="ba"></button>
+        <button class="game_b" id="bb"></button>
+        <button class="game_b" id="bc"></button>
+        <button class="game_b" id="ca"></button>
+        <button class="game_b" id="cb"></button>
+        <button class="game_b" id="cc"></button>
+    </div>
+    <div class="right">
+        <div class="scoreboard">
+            <button class="s_reset" onclick="resetScore()"><svg fill="#000000" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M960 0v112.941c467.125 0 847.059 379.934 847.059 847.059 0 467.125-379.934 847.059-847.059 847.059-467.125 0-847.059-379.934-847.059-847.059 0-267.106 126.607-515.915 338.824-675.727v393.374h112.94V112.941H0v112.941h342.89C127.058 407.38 0 674.711 0 960c0 529.355 430.645 960 960 960s960-430.645 960-960S1489.355 0 960 0" fill-rule="evenodd"></path> </g></svg></button>
+            <div id="player1">
+                <p id="name1">Player 1</p>
+                <p id="score1">0</p>
+            </div>
+            <div id="player2">
+                <p id="name2">Player 2</p>
+                <p id="score2">0</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <button class="start" onclick="Game()">Start!</button>
+        <button class="reset" onclick="reset()">Reset</button>
+    </div>
+</body>
+</html>
